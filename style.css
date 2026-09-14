@@ -1,0 +1,67 @@
+/* */
+
+header, main, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: dimgray;
+    color: white;
+}
+
+
+#img1 {
+    display: block;
+    margin: auto;
+    width: 800px;
+    height: 250px;
+}
+
+#logo_img {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+}
+#logo_text {
+    display: inline;
+    margin-left: 10px;
+}
+
+
+.page_title {
+    text-align: center;
+    background-color: seagreen;
+    color: white;
+    
+}
+
+#media_input{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.radio_btn_label{
+    display: inline-flex;
+}
+
+#review_textbox{
+    padding: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: darkseagreen;
+}

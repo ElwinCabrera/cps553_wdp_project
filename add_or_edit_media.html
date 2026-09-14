@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Elwin Cabrera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Media Archive - Add or Edit</title>
+</head>
+<body>
+
+    
+    <header>
+        <div id="logo_img_text">
+            <img id="logo_img" src="images/ivett-m-2EJoQ2tMhpc-unsplash.jpg" alt="A collection of DVDs">
+            <h2 id="logo_text">Media Vault</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="media.html">My Media</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1 class="page_title" >Add or Edit a Movie or Series</h1>
+        <img id="img1" src="images/ivett-m-2EJoQ2tMhpc-unsplash.jpg" alt="A collection of DVDs">
+
+
+
+        <div id="media_input">
+
+            <p>Plese complete the form below!</p>
+
+            <form  action="" method="POST">
+
+            
+                <input type="hidden" id="media_id" name="media_id">
+            
+
+                <label for="title">Media title:</label>
+                <input type="text" id="title" name="title">
+                <br>
+
+                <label for="authors">Creators:</label>
+                <input type="text" id="authors" name="authors">
+                <br>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre">
+                <br>
+
+                <p>Movie or Series?</p>
+                <div>
+                    
+                    <label for="is_movie_or_series">
+                        <input type="radio" id="is_movie" name="is_movie_or_series" value="is_movie"> Movie
+                    </label>
+                    <label for="is_movie_or_series">
+                        <input type="radio" id="is_series" name="is_movie_or_series" value="is_series"> Series
+                    </label>
+                    <br>
+                </div>
+
+                <p>Watch status:</p>
+                <label for="watch_status">
+                    <input type="radio" id="has_watched" name="watch_status" value="has_watched"> Watched
+                </label>
+                <label for="watch_status">
+                    <input type="radio" id="has_not_watched" name="watch_status" value="not_watched"> Not Watched
+                </label>
+                <label for="watch_status">
+                    <input type="radio" id="in_progress" name="watch_status" value="in_progress"> In Progress
+                </label>
+                
+                <br>
+
+                <p>Personal Rating:</p>
+                <label for="star_rating">
+                    <input type="radio" id="1star" name="star_rating" value="1star"> 1 star
+                </label>
+                
+                <label for="star_rating">
+                    <input type="radio" id="2star" name="star_rating" value="2star"> 2 stars
+                </label>
+
+                <label for="star_rating">
+                    <input type="radio" id="3star" name="star_rating" value="3star"> 3 stars
+                </label>
+                
+                <label for="star_rating">
+                    <input type="radio" id="4star" name="star_rating" value="4star"> 4 stars
+                </label>
+                
+                <label for="star_rating">
+                    <input type="radio" id="5star" name="star_rating" value="5star"> 5 stars
+                </label>
+    
+                <br>
+
+
+                <label for="method_of_viewing">Method of viewing:</label> <!--Netflix, HBO Max, in theaters-->
+                <input type="text" id="method_of_viewing" name="method_of_viewing">
+                <br>
+
+                
+
+
+                <label for="review_or_sum">Personal Review or Summary:</label>
+                <input id="review_textbox" type="text" id="review_or_sum" name="review_or_sum">
+                <br>
+
+                <label for="fav_qutes">List of Favorite Quotes:</label>
+                <input type="text" id="fav_qutes" name="fav_qutes">
+                <br>
+            
+
+                <input type="submit" value="Add or Update">
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer></footer>
+    
+</body>
+</html>

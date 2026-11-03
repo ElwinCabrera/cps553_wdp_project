@@ -114,3 +114,26 @@ This database is also in second normal form (2NF) because:
 Additionally, this database is also in third normal form (3NF) because:
   * It is in 2NF and,
   * There are no non-key attributes that depend on other non-key attributes that together depend on the key(s) (there are no transitive dependencies, all attributes depend on the key(s) and only the key(s)).
+
+
+### Database Implementation
+
+I used MariaDB a fork of MySQL for the relational database system. 
+
+I created 13 tables including `user` and `title` with the following [schema.sql](./database_scripts/schema.sql) queries. 
+
+Focusing on the `user` and `title` tables, the way these tables are related are through the foreign key attribute inside the `title` table which says that a `title` can be created by a `user` 
+
+Below are screenshots showing sucessful table creation for `user` and `title`.
+
+For `user`:
+![Output of Create Table command for table user](./images/database_design_images/user_table_creation_query.png "User create table query")
+
+For `title`:
+![Output of Create Table command for table title](./images/database_design_images/title_table_creation_query.png "title create table query")
+
+
+The image below shows the output of the `SHOW TABLES;` command. 
+
+![Output of SHOW TABLES command](./images/database_design_images/show_tables_query.png "Output of SHOW TABLES")
+

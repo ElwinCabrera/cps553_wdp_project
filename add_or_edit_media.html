@@ -37,10 +37,11 @@
 
             <p>Plese complete the form below!</p>
 
-            <form  action="" method="POST">
+            <form  action="" id="add_or_edit_media_form" method="POST">
 
             
                 <input type="hidden" id="media_id" name="media_id">
+                <p id="error">error</p>
             
 
                 <label for="title">Media title:</label>
@@ -112,7 +113,7 @@
 
 
                 <label for="review_or_sum">Personal Review or Summary:</label>
-                <input id="review_textbox" type="text" id="review_or_sum" name="review_or_sum">
+                <input id="review_textbox" type="text" name="review_or_sum">
                 <br>
 
                 <label for="fav_qutes">List of Favorite Quotes:</label>
@@ -129,5 +130,7 @@
 
     <footer></footer>
     
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/movie_review.js"></script>
 </body>
 </html>

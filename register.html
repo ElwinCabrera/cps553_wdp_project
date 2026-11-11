@@ -30,24 +30,24 @@
         <img id="img1" src="images/stock_photos/ivett-m-2EJoQ2tMhpc-unsplash.jpg" alt="A collection of DVDs">
         
 
-        <form action="" method="POST">
+        <form action="" id="register_form" method="POST">
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname">
+            <input type="text" id="fname" name="fname" required>
             <br>
 
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname" required>
             <br>
 
             <label for="username">Username or Email:</label>
-            <input type="text" id="username" name="username">
+            <input type="text" id="username" name="username" required>
             <br>
 
             <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd">
+            <input type="password" id="pwd" name="pwd" required>
             <br>
 
-            <input type="submit" value="Register">
+            <input type="submit" id="register_form_submit" value="Register">
 
         </form>
     </main>
@@ -55,5 +55,7 @@
 
     <footer></footer>
     
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/user.js"></script>
 </body>
 </html>

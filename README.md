@@ -127,9 +127,11 @@ Focusing on the `user` and `title` tables, the way these tables are related are 
 Below are screenshots showing sucessful table creation for `user` and `title`.
 
 For `user`:
+
 ![Output of Create Table command for table user](./images/database_design_images/user_table_creation_query.png "User create table query")
 
 For `title`:
+
 ![Output of Create Table command for table title](./images/database_design_images/title_table_creation_query.png "title create table query")
 
 
